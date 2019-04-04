@@ -22,6 +22,7 @@ before_script:
   - git rm --cached --ignore-unmatch index.html
 
 script:
+  - ./gradlew clean build
   - ./gradlew test
 
 after_script:
